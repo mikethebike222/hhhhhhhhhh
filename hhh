@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+        
+
+        <title>title</title>
+    <style>
+    div.row > div {
+        border-width:1px;
+        border-style:solid;
+        border-color:#cccccc;
+    }
+    p.head {
+        font-size:30px
+    }
+    #ill{
+         border-color:white;
+    }
+    #illtwo{
+         border-color:white;
+    }
+
+    </style>
+
+    </head>
+    <body>
+	
+	    <div class="container">
+		    <div class="row">
+                <div class="col-10 col-sm-6 bg-success text-white">
+                    <div class="text-center"> 
+                        <p class="head">Temperature</p>
+                    </div>
+                </div>
+
+                <div class="col-10 col-sm-6 bg-success text-white">
+                    <div class="text-center"> 
+                        <p class="head">Result</p>
+                    </div>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-3 col-sm-4 border-none">
+                    <div> <input type="number" class = "form-control" id="numba" placeholder="66" value="66"/></div>
+                </div>
+                <div class="col-2" id="ill">
+                    <div class="input-group-append">
+				<div class="col-12 btn-group ">
+						<select class="form-control bg-info text-white"  id="roundto">
+						  <option value="2">Fahreneit</option>
+						  <option value="2">Celsius</option>
+						</select>	
+				</div>
+			  </div>
+                </div>
+                <div class="col-3 col-sm-4 bg-light">
+                    <div><input type="number" class="form-control" placeholder="18.89" value="18.89" disabled id="out"></div>
+                </div>
+                <div class="col-2" id="illtwo">
+                    <div class="dropdown">
+                        <button class="btn btn-info dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Celsius&nbsp&nbsp&nbsp&nbsp </button>
+                        <div class="dropdown-menu bg-info" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item text-white" href="#">Celsius&nbsp &nbsp &nbsp  </a>
+                            <a class="dropdown-item text-white" href="#">Fahreneit</a>
+                        </div>
+                    </div>
+                </div>
+            </div><br>
+            <div class="row">
+                <div class="col-10 col-sm-6">
+                    <div class="text-center"> 
+                        <p>22 ° fahreneit = -5.56 ° Celsius</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-10 col-sm-6">
+                    <div class="text-center"> 
+                        <p>44 ° fahreneit = 6.67 ° Celsius</p>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-10 col-sm-6">
+                    <div class="text-center"> 
+                        <p>66 ° fahreneit = 18.89 ° Celsius</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+                
+	    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+		
+    </body>
+</html>
